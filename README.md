@@ -40,6 +40,6 @@ App으로만 존재하는 Toss 애플리케이션을 Web에서도 구현해보�
 
 ## 사용한 기술 {#section-technology}
 
-<img src="https://img.shields.io/badge/html5-#E34F26?style=for-the-badge&logo=HTML5&logoColor=white">
+![Static Badge](https://img.shields.io/badge/:badgeContent)
 
 ## 배운점 및 아쉬운 점 {#section-review}
