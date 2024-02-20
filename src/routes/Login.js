@@ -1,9 +1,10 @@
 import loginLogo from "./../images/logo/Toss_Logo_Primary.png";
+import { Link } from 'react-router-dom'
 
-function Sign() {
+function Login() {
     return (
         <div className="login-container">
-            <div className="login-logo">
+            <div className="login-logo logo-animation">
                 <img src={loginLogo} alt="" />
             </div>
             <div className="form-container">
@@ -22,13 +23,20 @@ function Sign() {
                         <label><input type="checkbox" /></label>
                         <a href="#"> 아이디 기억하기</a>
                     </div>
-                    <div className="register">회원가입</div>
+                    <Link to="/register" className="router-link" onClick={()=>{
+
+                    }}>
+                        <div className="register">회원가입</div>
+                    </Link>
 
                     <button type="submit">로그인</button>
 
-                    <div className="forgot">
-                        <p>아이디/비밀번호 찾기</p>
-                    </div>
+                    <Link to="/find" className="router-link">
+                        <div className="forgot">
+                            <p>아이디/비밀번호 찾기</p>
+                        </div>
+                    </Link>
+                    
                 </form>
             </div>
         </div>
@@ -36,4 +44,4 @@ function Sign() {
  
 }
 
-export default Sign;
+export default Login;

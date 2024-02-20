@@ -16,6 +16,11 @@
   font-family: 'Toss Product Sans';
 }
 
+.router-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* 헤더 스타일링 */
 .header-links {
   text-align: center;
@@ -93,21 +98,44 @@
   display: inline-block;
   width: 50%;
   padding: 10px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .form-container button {
   width: 100%;
   height: 45px;
-  background: #e0e0e0;
+  background: #0064FF;
+  color: #eee;
   border: none;
   outline: none;
   border-radius: 40px;
   margin-top: 15px;
 }
 
+.logo-animation {
+  animation-name: logo-hiding;
+  animation-duration: 1s;
+}
+
 .forgot {
   text-align: center;
   margin: 10px;
+}
+
+/* 애니메이션 기능 */
+@keyframes logo-hiding {
+  0% {
+    transform: translateY(0px);
+  }
+
+  30% {
+    transform: translateY(-60px);
+  }
+
+  100% {
+    transform: translateY(500px);
+  }
 }
 
 
