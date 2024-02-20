@@ -41,7 +41,7 @@ App으로만 존재하는 Toss 애플리케이션을 Web에서도 구현해보�
 ## 사용한 기술 {#section-technology}
 
 <img src="https://img.shields.io/badge/React-61DAFB?
-          style=for-the-badge
+          style=flat
           &logo=react
           &logoColor=white"/>
           
