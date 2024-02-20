@@ -42,6 +42,8 @@ App으로만 존재하는 Toss 애플리케이션을 Web에서도 구현해보�
 
 ### 최근 본 주식 기능
 
+local storage
+
 
 <br><br>
 
