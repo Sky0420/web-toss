@@ -2,7 +2,7 @@
 
 목차
 
-[1. 개요](#section-opening)
+[1. 개요](#개요)
 
 [2. 기능 설명](#section-function)
 
@@ -10,7 +10,7 @@
 
 [4. 배운점 및 아쉬운 점](#section-review)
 
-## 개요 {#section-opening}
+## 개요
 
 ### 의의
 
