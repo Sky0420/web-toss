@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCreditCard, faPiggyBank } from "@fortawesome/free-solid-svg-icons";
+import { faCreditCard, faSackDollar } from "@fortawesome/free-solid-svg-icons";
 
 function Spent() {
     return (
@@ -14,7 +14,7 @@ function Spent() {
                 <button className="transfer-btn">내역</button>
             </div>
             <div className="asset d-flex justify-content-center align-items-center gap-4">
-                <FontAwesomeIcon icon={faPiggyBank} className="fa-2x"/>
+                <FontAwesomeIcon icon={faSackDollar} className="fa-2x"/>
                 <div className="details flex-fill">
                     <div className="asset-info">다음 달 낼 카드값</div>
                     <div className="asset-balance">64,152,736원</div>

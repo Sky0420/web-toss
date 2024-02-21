@@ -2,9 +2,9 @@
 @import url('https://static.toss.im/tps/others.css');
 
 #root {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */ 
   min-height: 100vh;
   background-color: rgb(225, 225, 225);
 }
@@ -40,7 +40,6 @@
 .bg-body-tertiary {
   margin: 0;
   padding: 0;
-  position: fixed;
   width: 100vw;
   top: 0;
   left: 0;
@@ -138,7 +137,7 @@ input:focus {
 .container {
   background: white;
   border-radius: 15px;
-  width: 350px;
+  width: 400px;
 }
 
 .asset {
@@ -161,6 +160,16 @@ input:focus {
 .service-menu {
   margin: 0;
   padding: 10px;
+}
+
+/* Manage 스타일링 */
+.manage-container {
+  background-color: rgb(225, 225, 225);
+  border-radius: 15px;
+}
+
+.manage-wrapper {
+  width: 500px;
 }
 
 /* 애니메이션 기능 */
