@@ -29,7 +29,10 @@ function Login() {
                         <div className="register">회원가입</div>
                     </Link>
 
-                    <button type="submit">로그인</button>
+                    <Link to="/main" className="router-link">
+                        <button type="submit">로그인</button>
+                    </Link>
+                    
 
                     <Link to="/find" className="router-link">
                         <div className="forgot">
