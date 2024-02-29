@@ -1,29 +1,72 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import loginLogo from './../images/logo/Toss_Logo_Primary.png'
+import profilePicture from './../images/profile/profile.png'
+import styled from "styled-components";
+import Assets from './Assets'
+import Spent from './Spent'
+import Service from './Service';
+import Manage from './Manage';
+import Menu from './Menu';
 
 function Main() {
     return (
         <>
-        <Navbar className="bg-body-tertiary d-flex">
-            <Container className="nav d-flex flex-fill">
-                <Navbar.Brand to="/">
-                    <img className="logo" src={loginLogo}/>
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav" className="flex-fill">
-                    <Nav className="me-auto">
-                        <Link to="/" className="header-links">홈</Link>
-                        <Link to="#" className="header-links">링크</Link>
-                    </Nav>
-                </Navbar.Collapse>
-                안녕하세요, 홍길동님!
-            </Container>
-        </Navbar>
+        <Header>
+            <img src={loginLogo} alt="" />
+            <StyledLink>
+                <img src={profilePicture} alt="Profile picture" />
+                <span>
+                    홍길동님, 반갑습니다.
+                </span>
+            </StyledLink>
+        </Header>
+
+        <Content>
+            <Assets />
+            <Service />
+            <Spent />
+            <Manage />
+            <Menu />
+        </Content>
+
         </>
     )
 }
+
+const Header = styled.nav`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background: white;
+
+    img {
+        width: 120px;
+    }
+`
+
+const StyledLink = styled(Link)`
+    text-decoration:none;
+    color: inherit;
+    padding-right: 20px;
+
+    img {
+        border-radius: 100px;
+        margin-inline: 15px;
+        width: 35px;
+    }
+`
+
+const Content = styled.div`
+    display: flex;
+    margin: 30px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 100vw;
+    max-height: 100vh;
+`
 
 export default Main;
