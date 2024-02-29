@@ -51,7 +51,7 @@ const Content = styled.div`
     justify-content: space-around;
     align-items: center;
     border-radius: 15px;
-    background: #e9e9e9;
+    background: #eff0f1;
     width: 500px;
     height: 550px;
 
@@ -66,6 +66,7 @@ const Content = styled.div`
         border-radius: 15px;
         width: 80%;
         margin: 15px;
+        background: white;
     }
 
     .inputs:focus {

@@ -39,7 +39,7 @@ const Content = styled.div`
     justify-content: space-around;
     align-items: center;
     border-radius: 15px;
-    background: #e9e9e9;
+    background: #eff0f1;
     width: 500px;
 
     h4 {
@@ -54,6 +54,7 @@ const Content = styled.div`
         width: 80%;
         margin: 10px;
         margin-block: 15px;
+        background: white;
     }
 
     input:focus {
